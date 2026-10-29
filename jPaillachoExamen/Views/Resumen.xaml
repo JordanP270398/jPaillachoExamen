@@ -11,7 +11,8 @@
                 x:Name="lblUsuarioConectado"
                 Text="Usuario conectado:" />
 
-        <Label Text="RESUMEN" />
+        <Label Text="RESUMEN" 
+               Style="{StaticResource TituloResumen}"/>
 
         <!-- 9 filas y 2 columnas -->
         <Grid

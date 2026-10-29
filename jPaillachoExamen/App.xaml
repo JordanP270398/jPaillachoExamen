@@ -9,6 +9,79 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+
+
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="Beige" />
+                <Setter Property="PlaceholderColor" Value="#666666" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Margin" Value="3" />
+            </Style>
+
+            <!-- Botones: estilo implícito global -->
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#C2410C" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="Padding" Value="12,8" />
+            </Style>
+
+            <!-- Etiquetas generales: estilo implícito global -->
+            <Style TargetType="Label">
+                <Setter Property="TextColor"
+            Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <!-- Título de Login: estilo explícito global -->
+            <Style x:Key="TituloLogin" TargetType="Label">
+                <Setter Property="TextColor" Value="Purple" />
+                <Setter Property="FontSize" Value="26" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,10" />
+            </Style>
+
+            <!-- Título de Registro: estilo explícito global -->
+            <Style x:Key="TituloRegistro" TargetType="Label">
+                <Setter Property="TextColor" Value="Blue" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,10" />
+            </Style>
+
+            <!-- Título de Resumen: estilo explícito global -->
+            <Style x:Key="TituloResumen" TargetType="Label">
+                <Setter Property="TextColor" Value="#EA580C" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,10" />
+            </Style>
+
+            <!-- Identificación del usuario -->
+            <Style x:Key="UsuarioConectado" TargetType="Label">
+                <Setter Property="TextColor"
+            Value="{AppThemeBinding Light=#7C2D12, Dark=#FDBA74}" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <!-- Separación entre las celdas -->
+            <Style TargetType="Grid">
+                <Setter Property="RowSpacing" Value="10" />
+                <Setter Property="ColumnSpacing" Value="10" />
+            </Style>
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

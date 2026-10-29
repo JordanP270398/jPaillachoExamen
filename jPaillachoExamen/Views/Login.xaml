@@ -13,9 +13,7 @@
 
         <Label
          Text="INICIAR SESIÓN"
-         VerticalOptions="Center" 
-         FontSize="20"
-         HorizontalOptions="Center"
+        Style="{StaticResource TituloLogin}"
                 />
 
         <Grid

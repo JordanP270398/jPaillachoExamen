@@ -13,10 +13,12 @@
       
         <Label
                 x:Name="lblUsuarioConectado"
-                Text="Usuario conectado:" />
+                Text="Usuario conectado:" 
+            Style="{StaticResource UsuarioConectado}"/>
 
      
-        <Label Text="REGISTRO" />
+        <Label Text="REGISTRO" 
+               Style="{StaticResource TituloRegistro}"/>
 
     
         <Grid

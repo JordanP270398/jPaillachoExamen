@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jPaillachoExamen.Views.Login"
+             Title="Login">
+    
+    <VerticalStackLayout
+        
+        Spacing="10"
+        Padding="20">
+
+        <Image Source="gymfenix1.png" WidthRequest="150" />
+
+        <Label
+         Text="INICIAR SESIÓN"
+         VerticalOptions="Center" 
+         FontSize="20"
+         HorizontalOptions="Center"
+                />
+
+        <Grid
+                RowDefinitions="Auto,Auto,Auto"
+                ColumnDefinitions="Auto,*">
+            <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Usuario:" />
+            <Entry
+                    x:Name="txtUsuario"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Placeholder="Ingrese su usuario" />
+            <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Contraseña:" />
+            <Entry
+                    x:Name="txtContrasena"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Placeholder="Ingrese su contraseña"
+                    IsPassword="True" />
+            <Button
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="Iniciar sesión"
+                    Clicked="OnIniciarSesionClicked" />
+
+        </Grid>
+
+        <Button
+                Text="Acerca de"
+                Clicked="OnAcercaDeClicked" />
+
+
+
+    </VerticalStackLayout>
+
+
+</ContentPage>

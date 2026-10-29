@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jPaillachoExamen.Views.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout
+            Spacing="10"
+            Padding="20">
+
+        <Label
+                x:Name="lblUsuarioConectado"
+                Text="Usuario conectado:" />
+
+        <Label Text="RESUMEN" />
+
+        <!-- 9 filas y 2 columnas -->
+        <Grid
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                ColumnDefinitions="Auto,*">
+
+            <!-- Fila 0 -->
+            <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Nombre:" />
+
+            <Label
+                    x:Name="lblNombre"
+                    Grid.Row="0"
+                    Grid.Column="1" />
+
+            <!-- Fila 1 -->
+            <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Apellido:" />
+
+            <Label
+                    x:Name="lblApellido"
+                    Grid.Row="1"
+                    Grid.Column="1" />
+
+            <!-- Fila 2 -->
+            <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="Edad:" />
+
+            <Label
+                    x:Name="lblEdad"
+                    Grid.Row="2"
+                    Grid.Column="1" />
+
+            <!-- Fila 3 -->
+            <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Text="Fecha de inicio:" />
+
+            <Label
+                    x:Name="lblFechaInicio"
+                    Grid.Row="3"
+                    Grid.Column="1" />
+
+            <!-- Fila 4 -->
+            <Label
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Text="Plan:" />
+
+            <Label
+                    x:Name="lblPlan"
+                    Grid.Row="4"
+                    Grid.Column="1" />
+
+            <!-- Fila 5 -->
+            <Label
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Text="Casillero:" />
+
+            <Label
+                    x:Name="lblCasillero"
+                    Grid.Row="5"
+                    Grid.Column="1" />
+
+            <!-- Fila 6 -->
+            <Label
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Text="Monto inicial:" />
+
+            <Label
+                    x:Name="lblMontoInicial"
+                    Grid.Row="6"
+                    Grid.Column="1" />
+
+            <!-- Fila 7 -->
+            <Label
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Text="Pago mensual:" />
+
+            <Label
+                    x:Name="lblPagoMensual"
+                    Grid.Row="7"
+                    Grid.Column="1" />
+
+            <!-- Fila 8 -->
+            <Label
+                    Grid.Row="8"
+                    Grid.Column="0"
+                    Text="Pago total:" />
+
+            <Label
+                    x:Name="lblPagoTotal"
+                    Grid.Row="8"
+                    Grid.Column="1" />
+
+        </Grid>
+
+        <Button
+                Text="Nuevo registro"
+                Clicked="OnNuevoRegistroClicked" />
+
+        <Button
+                Text="Cerrar sesión"
+                Clicked="OnCerrarSesionClicked" />
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
